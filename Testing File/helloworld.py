@@ -1,4 +1,3 @@
-
 from flask import Flask
 from datetime import datetime
 
@@ -28,10 +27,31 @@ TIME_HTML = """
         <a href="/time">Refresh</a>
         <br>
         Thanks for visiting!
+        <br>
+        <a href="/secret">Notes</a>
+
     </body></html>
     """
+@app.route('/secret')
+def secret():
+    return NOTES_HTML
+
+NOTES_HTML = """
+    <html><body>
+        <h1>Notes</h1>
+        <p>These are some notes that I have taken.</p>
+        <ul>
+            <li>First note</li>
+            <li>Second note</li>
+            <li>Third note</li>
+        </ul>
+        <a href="/time">Check Time</a>
+        <br>
+        <a href="/">Back</a>
+    """
+   
+
 
 if __name__ == "__main__":
-    # Launch the Flask dev server
     app.run(host="localhost", debug=True)
 

@@ -6,7 +6,12 @@ app = Flask(__name__)
 @app.route('/')
 def hello():
     name = request.args['name']
-    return HELLO_HTML.format(
+    if name:
+        return HELLO_HTML.format(
+            name, str(datetime.now()))
+    else:
+        name = "world"
+        return HELLO_HTML.format(
             name, str(datetime.now()))
 
 HELLO_HTML = """

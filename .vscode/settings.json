@@ -1,0 +1,11 @@
+{
+    "editor.quickSuggestions": {
+        "other": "off"
+    },
+    "typescript.tsserver.web.projectWideIntellisense.enabled": true,
+    "editor.suggest.showSnippets": true,
+    "editor.suggest.showProperties": true,
+    "editor.suggest.showUsers": true,
+    "editor.suggest.showWords": true,
+    "editor.inlineSuggest.enabled": false
+}

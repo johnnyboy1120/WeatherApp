@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="/static/styles.css">
+        <title>WeatherAppInfo</title>
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="logo">WeatherApp    </div>
+            <a href="/">Home</a>
+            <a href="/about">About Us</a>
+            <a href="/citations">Citations</a>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div style="text-align: center;">
+            <h2> WeatherApp - Powered By:<a href="https://openweathermap.org/">OpenWeather</a>. </h2>
+            
+        </div>
+        <div class="center-box-two">
+            <h2 style="color: white;">{{ city_name }}:</h2>
+            <h4 style="color: white;">Description: {{ weather_desc }}.</h4>
+            <h4 style="color: white;">Temperature: {{ temp }}°C or {{ ftemp }}°F</h4>
+            <h4 style="color: white;">Feels like: {{ feels_like }}°C.</h4>
+            <a href="/" 
+        style="display: inline-block; padding: 7px 12px; font-size: 16px; color: white; background-color: #333; text-decoration: none; border-radius: 5px;">Home</a>
+        </div>
+            <br>
+        <br>
+        
+        
+    </body>
+</html>

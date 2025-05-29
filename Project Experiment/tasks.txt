@@ -1,0 +1,34 @@
+
+
+
+- Add a logo
+- Add pictures
+- Create a bar for weather in the next few days???
+✅ Implement user login and favorite weather feature (top 3 cities, info saved in a CSV file)
+✅ Automatically get the user's city using another API (tested and works)
+- Use more colors and make it look less like a survey
+
+
+
+
+
+Should I make the design simpler (maybe add a bit more but not too much changes) 
+but add info like next few days, log in option showing top 3 favorite cities, 
+and also add the automatic city getting api?
+
+
+- Location
+    submit - city
+    mylocation - api
+    
+
+- Home page -> not logged in
+- Login in button in this homepage
+
+- When in Login.html, it asks for login, if no account, 
+  create new account is on the bottom (register.html)
+- When clicked create new account, go to register.html html
+
+- After signing up, let the user login again. Redirect to login page.
+- After login in, set log in 
+

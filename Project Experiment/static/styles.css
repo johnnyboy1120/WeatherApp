@@ -1,39 +1,110 @@
 body {
-    background: url("https://img.freepik.com/free-photo/gray-wall-textures-background_74190-4389.jpg");
+    background: linear-gradient(to bottom right, #437ce7, #a25af5);
+
     background-size: cover;
     background-repeat: no-repeat;
     font-family: Arial, sans-serif;
-    font-size: 16px;
+    font-size: 18px;
 }
+
+
+  
+  .center-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+    padding: 50px 60px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px); /* Optional: adds a blur effect behind the box */
+    -webkit-backdrop-filter: blur(10px); /* For Safari support */
+    text-align: center;
+  }
+  
+  .center-box-two {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+    padding: 25px 60px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px); /* Optional: adds a blur effect behind the box */
+    -webkit-backdrop-filter: blur(10px); /* For Safari support */
+    text-align: center;
+  }
+
+
+h4 {
+    color: #000000;
+}
+h2 {
+    font-size: 24px;
+}
+  .city-input {
+    width: 100%;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent input background */
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .city-input::placeholder {
+    color: #eee;
+  }
+  
 
 
 
 input[type='text'] {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 input[type='submit'] {
-    font-size: 14px;
-    background-color: #333;
+    font-size: 16px;
+    background-color: rgba(38, 36, 89, 0.7); /* Semi-transparent white */
     color: white;
     padding: 8px 10px;
     border: none;
-    border-radius: 3px;
+    border-radius: 8px;
     cursor: pointer;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1)
 }
+
+
 
 .navbar {
     overflow: hidden;
-    background-color: #333;
+    background-color: #262459;
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
+}
+
+
+
+.navbar .logo {
+    float: left; /* Align it to the left */
+    display: block;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
 .navbar a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: #ffffff;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;

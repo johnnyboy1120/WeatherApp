@@ -1,0 +1,82 @@
+<!-- <html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="/static/styles.css">
+        <title>WeatherApp</title>
+    </head>
+    <body>
+        <div class="navbar">
+            <a href="/">Home</a>
+            <a href="/about">About Us</a>
+            <a href="/citations">Citations</a>
+        </div>
+        <br>
+        <br>
+        <hr>
+        <h2> WeatherApp - Powered By: <a href="https://openweathermap.org/">OpenWeather</a>. </h2>
+        <hr>
+        <form action="/backend">
+            ...
+            Enter a city: <input type='text' name='city' autocomplete='on'><br>
+            <br>
+            <input type='submit' value='Continue'>
+        </form>
+    </body>
+</html>-->
+
+
+<!-- What's your name? <input type='text' name='name' autocomplete='on'><br> -->
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="/static/styles.css">
+        <title>WeatherApp</title>
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="logo">WeatherApp</div>
+            <a href="/">Home</a>
+            <a href="/about">About Us</a>
+            <a href="/citations">Citations</a>
+            <a href="/logout">Logout</a>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div style="text-align: center;">
+            <h2> WeatherApp - Powered By:<a href="https://openweathermap.org/">OpenWeather</a>. </h2>
+            <h2>Welcome, {{ session['username'] }}!</h2>
+    
+            
+        </div>
+        <br>
+        <br>
+        
+        <div class="center-box">
+            <form action="/backend">
+                <h4>Enter a city:</h4>
+                <input type='text' placeholder="Enter city name..." name='city' autocomplete='on' class="city-input"><br>
+                <br>
+                <input type='submit' name='action' value='My Location'>
+                <input type='submit' name='action' value='Continue'>
+
+            </form>
+        </div>
+        <br>
+        <br>
+        
+    </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <h2>Welcome, {{ session['username'] }}!</h2>
+    <a href="/logout">Logout</a>
+</body>
+</html>-->
+

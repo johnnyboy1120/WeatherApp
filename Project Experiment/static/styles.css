@@ -29,7 +29,21 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
-    padding: 25px 60px;
+    padding: 15px 60px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px); /* Optional: adds a blur effect behind the box */
+    -webkit-backdrop-filter: blur(10px); /* For Safari support */
+    text-align: center;
+  }
+
+ .center-box-three {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+    padding: 5px 60px;
     border-radius: 15px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(10px); /* Optional: adds a blur effect behind the box */

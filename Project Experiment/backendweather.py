@@ -10,8 +10,6 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    if 'username' in session:
-        return f"Welcome, {session['username']}!"
     return render_template('home.html')
 
 @app.route('/about')
@@ -65,6 +63,7 @@ def get_location():
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 USER_FILE = os.path.join(BASE_DIR, 'users.json')
 
+"""# Login Functions
 def load_users():
     if not os.path.exists(USER_FILE):
         with open(USER_FILE, 'w') as file:
@@ -74,13 +73,12 @@ def load_users():
     with open(USER_FILE, 'r') as file:
         return json.load(file)
 
-# Save users to the JSON file
 def save_users(users):
     with open(USER_FILE, 'w') as file:
         json.dump(users, file, indent=4)
-    print("Updated Users:", users)
+    print("Updated Users:", users)"""
 
-@app.route('/', methods=['GET', 'POST'])
+"""@app.route('/', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
         username = request.form['username']
@@ -94,7 +92,7 @@ def login():
         else:
             return render_template_string(INVALID_HTML)
 
-    return render_template('login.html')
+    return render_template('login.html')"""
 
 INVALID_HTML = """
 <html>
@@ -104,7 +102,7 @@ INVALID_HTML = """
 <html>
 """
 
-@app.route('/register', methods=['GET', 'POST'])
+"""@app.route('/register', methods=['GET', 'POST'])
 def register():
     if request.method == 'POST':
         new_username = request.form['username']
@@ -130,7 +128,7 @@ def logout():
 def home():
     if 'username' in session:
         return f"Welcome, {session['username']}! <br><a href='/logout'>Logout</a>"
-    return redirect(url_for('login'))
+    return redirect(url_for('login'))"""
 
 if __name__ == "__main__":
     app.run(host="localhost", debug=True)

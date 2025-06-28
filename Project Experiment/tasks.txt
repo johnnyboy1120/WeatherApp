@@ -1,12 +1,12 @@
 
 
 
-- Add a logo
+✅ Add a logo
 - Add pictures
 - Create a bar for weather in the next few days???
 ✅ Implement user login and favorite weather feature (top 3 cities, info saved in a CSV file)
 ✅ Automatically get the user's city using another API (tested and works)
-- Use more colors and make it look less like a survey
+✅ Use more colors and make it look less like a survey
 
 
 

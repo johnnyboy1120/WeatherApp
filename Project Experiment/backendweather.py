@@ -5,6 +5,8 @@ import urllib3
 from flask import Flask, render_template, request, redirect, url_for, session
 import json
 import os
+from dotenv import load_dotenv
+load_dotenv()
 
 app = Flask(__name__)
 
@@ -34,7 +36,7 @@ def get_weather():
 
     print(f"City parameter received: {city}")  # Debugging
 
-    api_key = "354d2edc64403794046f6fb8a76710d4"
+    api_key = os.environ.get("OPENWEATHER_API_KEY")
     url = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric"
     
     response = requests.get(url)
